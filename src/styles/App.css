@@ -1,0 +1,35 @@
+h1 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.jogo {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-areas: 'area1 area2 area3'
+                         'area4 area5 area6'
+                         'area7 area8 area9';
+    margin: auto;
+    margin-top: 2rem;
+    width: 320px;
+}
+
+.areas {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    border: none;
+    height: 50px;
+    margin-top: 1px;
+}
+
+.texto {
+    font-size: 90px;
+    margin: auto;
+}
