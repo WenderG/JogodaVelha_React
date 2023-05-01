@@ -30,9 +30,9 @@ import { useState } from 'react'
 //  }
 // }
 
-function App() {
+function App() { 
 
-  const [ area1, setArea1 ] = useState(true)
+  const [ area1, setArea1 ] = useState(null)
   const [ area2, setArea2 ] = useState(true)
   const [ area3, setArea3 ] = useState(true)
   const [ area4, setArea4 ] = useState(true)
@@ -54,7 +54,7 @@ function App() {
     <div className="App">
       <h1>Jogo da Velha</h1>
       <section className='jogo'>
-        <div className='areas area1'>
+        <div className='areas area1' id='area1'>
           <button onClick={() => setArea1(!area1)}>
             <div className='texto'>
               {area1?jogadorX():jogadorO()}
@@ -76,22 +76,46 @@ function App() {
           </button>
         </div>
         <div className='areas area4'>
-          <div className='texto'></div>
+          <button onClick={() => setArea4(!area4)}>
+            <div className='texto'>
+              {area4?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
         <div className='areas area5'>
-          <div className='texto'></div>
+          <button onClick={() => setArea5(!area5)}>
+            <div className='texto'>
+              {area5?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
         <div className='areas area6'>
-          <div className='texto'></div>
+          <button onClick={() => setArea6(!area6)}>
+              <div className='texto'>
+              {area6?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
         <div className='areas area7'>
-          <div className='texto'></div>
+          <button onClick={() => setArea7(!area7)}>
+            <div className='texto'>
+              {area7?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
         <div className='areas area8'>
-          <div className='texto'></div>
+          <button onClick={() => setArea8(!area8)}>
+            <div className='texto'>
+              {area8?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
         <div className='areas area9'>
-          <div className='texto'></div>
+          <button onClick={() => setArea9(!area9)}>
+            <div className='texto'>
+              {area9?jogadorX():jogadorO()}
+            </div>
+          </button>
         </div>
       </section>
     </div>
