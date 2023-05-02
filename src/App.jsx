@@ -32,15 +32,12 @@ import { useState } from 'react'
 
 function App() { 
 
-  const [ area1, setArea1 ] = useState(null)
-  const [ area2, setArea2 ] = useState(true)
-  const [ area3, setArea3 ] = useState(true)
-  const [ area4, setArea4 ] = useState(true)
-  const [ area5, setArea5 ] = useState(true)
-  const [ area6, setArea6 ] = useState(true)
-  const [ area7, setArea7 ] = useState(true)
-  const [ area8, setArea8 ] = useState(true)
-  const [ area9, setArea9 ] = useState(true)
+  const [ game, setGame ] = useState( {
+    positionOne: null,      positionTwo: null,      positionThree: null,
+    positionFour: null,     positionFive: null,     positionSix: null, 
+    positionSeven: null,    positionEight: null,    positionNine: null,
+  })
+  
   
   const jogadorX = () => {
     return 'X'
